@@ -1,0 +1,355 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+footer img, .img-inside img {
+	margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, .nav-bar, .flash-message {
+	-webkit-text-shadow: 1px 1px 1px black;
+	-moz-text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px black;
+}
+
+h1, h2, h3 {
+	color: #4d4d4d;
+}
+h4, h5, h6 {
+	color: #5c5a4c;
+}
+
+header h2 .part-one {
+	color: #64a500;
+	font-size: 78px;
+}
+header h2 .space {
+	font-size: 70px;
+}
+header h2 .part-two {
+	color: #e44d26;
+	font-size: 60px;
+}
+header h3 {
+	color: #5c5a4c;
+	font-size: 45px;
+	padding-left: 12px;
+}
+
+.callout h5 {
+	margin-top: 0;
+	color: white;
+}
+
+#logo {
+	margin-top: 10px;
+	background-image: url('/images/plzensky-hackathon.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	/*padding-left: 120px;*/
+	padding-left: 240px;
+}
+
+#logo h2, #logo h3 {
+	-webkit-text-shadow: 1px 1px 2px black;
+	-moz-text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 2px black;
+}
+
+.clear {
+	clear: both;
+}
+
+.img-inside {
+	position: relative;
+}
+
+.over-img {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+a.img-inside:hover .over-img, a.img-inside:focus .over-img {
+	background-color: #e44d26;
+}
+
+.flash-message {
+	-webkit-background-size: 40px 40px;
+	-moz-background-size: 40px 40px;
+	background-size: 40px 40px;
+	
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.25, rgba(255, 255, 255, 0.05)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.05)), color-stop(0.75, rgba(255, 255, 255, 0.05)), color-stop(0.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	
+	-webkit-animation: animate-bg 5s linear infinite;
+	-moz-animation: animate-bg 5s linear infinite;
+
+	-moz-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4), 0px 0px 8px -1px #444;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4), 0px 0px 8px -1px #444;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4), 0px 0px 8px -1px #444;
+	
+	color: white;
+
+	width: 100%;
+	border: 1px solid;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	padding: 20px;
+	padding-right: 70px;
+	padding-left: 70px;
+	position: fixed;
+	_position: absolute;
+	z-index: 2000;
+	cursor: pointer;
+}
+
+@-webkit-keyframes animate-bg {
+	from { background-position: 0 0; }
+	to { background-position: -80px 0; }
+}
+@-moz-keyframes animate-bg {
+	from { background-position: 0 0; }
+	to { background-position: -80px 0; }
+}
+
+.flash-message.success {
+	background-color: #64a500;
+	border-color: #55a12c;
+}
+.flash-message.info {
+	background-color: #4ea5cd;
+	border-color: #3b8eb5;
+}
+.flash-message.error {
+	background-color: #de4343;
+	border-color: #c43d3d;
+}	 
+.flash-message.warning {
+	background-color: #eaaf51;
+	border-color: #d99a36;
+}
+
+.flash-message .close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 17px;
+	right: 17px;
+	font-size: 30px;
+}
+.flash-message .close:hover {
+	color: black;
+}
+
+#contact-form .activate {
+	display: none;
+}
+
+#contact-form .error {
+	margin-bottom: 20px;
+}
+
+.main-column {
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-color: #f1f1f1;
+}
+.main-column.content {
+	background-image: url('/images/bg.jpg');
+	border-bottom: 1px solid silver;
+}
+.main-column.header {
+	background-position: top right;
+	background-image: url('/images/bg-header.jpg');
+}
+@media only screen and (min-width: 768px) {
+	.main-column.menu {
+		background-image: none;
+		padding-top: 0;
+		background: #4d4d4d;
+		border-left: 1px solid #4d4d4d;
+		border-right: 1px solid #4d4d4d;
+	}
+	.main-column.menu .columns {
+		padding: 0;
+		margin-left: -10px;
+	}
+	.main-column.menu .columns ul {
+		margin: 0;
+	}
+	.main-column.menu .columns ul li {
+		border-color: #4d4d4d;
+		border-left-color: black;
+	}
+	.main-column.menu .columns ul li a {
+		padding: 10px 30px;
+		font-weight: bold;
+	}
+	.main-column.menu .columns ul li:first-child {
+		border-left-width: 0;
+	}
+	.main-column.menu .columns ul li:last-child {
+		border-right-color: black;
+	}
+}
+@media only screen and (min-width: 1022px) {
+	body {
+		text-align: center;
+	}
+	.main-column {
+		display: inline-block;
+		text-align: left;
+		border-left: 1px solid silver;
+		border-right: 1px solid silver;
+		-webkit-box-shadow: 0px 0px 8px -1px #888;
+		-moz-box-shadow: 0px 0px 8px -1px #888;
+		box-shadow: 0px 0px 8px -1px #888;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.main-column.header {
+		padding-top: 20px;
+		padding-bottom: 30px;
+		margin-bottom: -1px;
+	}
+	.main-column.menu {
+		margin-bottom: -1px;
+	}
+	.under-logo {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1021px) {
+	.main-column.content {
+		background-image: none;
+	}
+	#logo .date-and-place {
+		display: none;
+	}
+	header h2 .part-one {
+		font-size: 81px;
+	}
+	header h2 .space {
+		font-size: 70px;
+	}
+	header h2 .part-two {
+		font-size: 67px;
+		padding-left: 86px;
+	}
+	header h3 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	a.th {
+		display: inline-block;
+	}
+	#logo {
+		background-size: 120px 86px;
+		padding-left: 120px;
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+	header h2 {
+		margin-top: -10px;
+		margin-bottom: 5px;
+	}
+	header h2 .part-one {
+		font-size: 63px;
+	}
+	header h2 .space {
+		font-size: 0;
+	}
+	header h2 .part-two {
+		font-size: 51px;
+		padding-left: 69px;
+	}
+	header h3 {
+		font-size: 27px;
+		margin-bottom: 20px;
+	}
+	header h3 .show-for-small {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#logo {
+		margin-top: 20px;
+		min-height: 100px;
+	}
+	header h2 {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	header h2 .part-one {
+		font-size: 40px;
+	}
+	header h2 .part-two {
+		font-size: 33px;
+		padding-left: 43px;
+	}
+	header h3 {
+		font-size: 19px;
+		margin-bottom: 20px;
+	}
+}
+/* Extra small display */
+@media only screen and (max-width: 360px) {
+	#logo {
+		margin-left: 0px;
+	}
+	header h2 {
+		margin-top: 0;
+		line-height: 0.9;
+		margin-bottom: 20px;
+	}
+	header h2 .part-one {
+		font-size: 27px;
+	}
+	header h2 .part-two {
+		font-size: 22px;
+		padding-left: 29px;
+	}
+	header h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	header h3 .show-for-small {
+		display: inherit !important;
+	}
+}
+/* Map */
+@media only screen and (min-height: 521px) {
+	#map {
+		min-height: 480px;
+	}
+}
+@media only screen and (max-height: 520px) {
+	#map {
+		min-height: 400px;
+	}
+}
+@media only screen and (max-height: 420px) {
+	#map {
+		min-height: 300px;
+	}
+}
+@media only screen and (max-height: 320px) {
+	#map {
+		min-height: 200px;
+	}
+}
